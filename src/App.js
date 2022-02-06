@@ -1,9 +1,9 @@
-import Home from "./components/pages/home/Home";
-import Login from "./components/pages/login/Login";
-import Register from "./components/pages/register/Register";
-import Settings from "./components/pages/settings/Settings";
-import Single from "./components/pages/single/Single";
-import Write from "./components/pages/write/Write";
+import Home from "./pages/home/Home";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
+import Settings from "./pages/settings/Settings";
+import Single from "./pages/single/Single";
+import Write from "./pages/write/Write";
 import Topbar from "./components/topbar/Topbar";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useContext, useState } from "react";
 import "./write.css";
-import Context from "../../../context/Context";
+import { Context } from "../../context/Context";
 
 const Write = () => {
   const [title, setTitle] = useState("");
@@ -28,6 +28,7 @@ const Write = () => {
     }
     try {
       const res = await axios.post("http://localhost:5000/api/posts", newPost);
+      window.location.replace("http://localhost:5000/api/post/" + res.data._id);
     } catch (err) {}
   };
 

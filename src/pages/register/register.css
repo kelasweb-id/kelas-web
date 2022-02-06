@@ -1,53 +1,48 @@
-.login {
+.register {
   height: calc(100vh - 50px);
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../../assets/img/login.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../assets/img/register.jpg");
   background-size: cover;
 }
 
-.loginTitle {
+.registerTitle {
   font-size: 50px;
 }
 
-.loginForm {
+.registerForm {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.loginForm > label {
+.registerForm > label {
   margin: 10px 0;
 }
 
-.loginInput {
+.registerInput {
   padding: 10px;
   background-color: white;
   border: none;
 }
 
-.loginButton {
+.registerButton {
   margin-top: 20px;
   cursor: pointer;
-  background-color: lightcoral;
+  background-color: teal;
   border: none;
   color: white;
   border-radius: 10px;
   padding: 10px;
 }
 
-.loginButton:disabled {
-  cursor: not-allowed;
-  background-color: rgb(253, 184, 184);
-}
-
-.loginRegisterButton {
+.registerLoginButton {
   position: absolute;
   top: 60px;
   right: 20px;
-  background-color: teal;
+  background-color: lightcoral;
   cursor: pointer;
   border: none;
   padding: 10px;
