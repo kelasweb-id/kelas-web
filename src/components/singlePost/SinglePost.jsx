@@ -26,14 +26,14 @@ const SinglePost = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`/posts/${post._id}`, { data: { username: user.username } });
+      await axios.delete(`http://localhost:5000/api/posts/${post._id}`, { data: { username: user.username } });
       window.location.replace("/");
     } catch (err) {}
   };
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`/posts/${post._id}`, { username: user.username, title, desc });
+      await axios.put(`http://localhost:5000/api/posts/${post._id}`, { username: user.username, title, desc });
       // window.location.reload();
       setUpdateMode(false);
     } catch (err) {}
@@ -42,7 +42,7 @@ const SinglePost = () => {
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
-        {post.photo && <img src={PF + post.photo} alt="post" />}
+        {post.photo && <img src={PF + post.photo} alt="post" className="singlePostImg" />}
         {updateMode ? (
           <input type="text" value={title} className="singlePostInfoTitleInput" autoFocus onChange={(e) => setTitle(e.target.value)} />
         ) : (
