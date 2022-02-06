@@ -44,7 +44,7 @@ const SinglePost = () => {
       <div className="singlePostWrapper">
         {post.photo && <img src={PF + post.photo} alt="post" className="singlePostImg" />}
         {updateMode ? (
-          <input type="text" value={title} className="singlePostInfoTitleInput" autoFocus onChange={(e) => setTitle(e.target.value)} />
+          <input type="text" value={title} className="singlePostTitleInput" autoFocus onChange={(e) => setTitle(e.target.value)} />
         ) : (
           <h1 className="singlePostTitle">
             {title}

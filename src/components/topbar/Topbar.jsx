@@ -26,16 +26,16 @@ const Topbar = () => {
               HOME
             </Link>
           </li>
-          <li className="topListItem">
+          {/* <li className="topListItem">
             <Link to="/" className="link">
               ABOUT
             </Link>
-          </li>
-          <li className="topListItem">
+          </li> */}
+          {/* <li className="topListItem">
             <Link to="/" className="link">
               CONTACT
             </Link>
-          </li>
+          </li> */}
           <li className="topListItem">
             <Link to="/write" className="link">
               WRITE
